@@ -4127,3 +4127,10 @@ span .sbOptions {
 .form_oplata .code .er_mes {
     right: 270px;
 }
+
+.logos {
+    float: left;
+    position: relative;
+    top:-9px;
+    margin-left: 15px;
+}
