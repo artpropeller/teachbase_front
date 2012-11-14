@@ -6,12 +6,16 @@
           rel='stylesheet' type='text/css'>
 
     <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
-    <link type="text/css" rel="stylesheet" media="all" href="css/reset.css"/>
-    <link type="text/css" rel="stylesheet" media="all" href="css/style.css"/>
-    <link type="text/css" rel="stylesheet" media="all" href="css/but.css"/>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
-    <script type="text/javascript" src="js/tiny.js"></script>
+    <link type="text/css" rel="stylesheet" media="all" href="css/jquery.fancybox.css"/>
+        <link type="text/css" rel="stylesheet" media="all" href="css/reset.css"/>
+        <link type="text/css" rel="stylesheet" media="all" href="css/style.css"/>
+        <link type="text/css" rel="stylesheet" media="all" href="css/but.css"/>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script type="text/javascript" src="js/jquery.selectbox-0.1.3.min.js"></script>
+        <script type="text/javascript" src="js/jquery.jscrollpane.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript" src="js/jquery.fancybox.js"></script>
+        <script type="text/javascript" src="js/tiny.js"></script>
 </head>
 <body>
 <div id="container">
@@ -36,7 +40,8 @@
         </div>
     </div>
 </div>
-<div id="content" class="oplata">
+<div class="empty"></div>
+<div id="content" class="oplata box">
     <div class="block"><h1>Настройки тарифа</h1>
 
         <ul class="pager">
@@ -132,7 +137,7 @@
             <div class="txt">
                 <div class="form">
                     <div class="form_item">
-                        <input type="text" placeholder="Промокод">
+                        <input class="promo" type="text" placeholder="Промокод">
                         <button>проверить</button>
                     </div>
                 </div>
@@ -193,5 +198,20 @@
 
 
 </div>
+<script type="text/javascript">
+    $('.selectbox').selectbox();
+    $(function () {
+        $.fancybox($('.oplata.box'), {
+            width:1012,
+            height:650,
+            autoSize:false,
+            padding:0,
+            margin:20,
+            scrolling:false,
+            minHeight:650
+        });
+    });
+
+</script>
 </body>
 </html>

@@ -5,11 +5,15 @@
     <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic&subset=latin,cyrillic'
           rel='stylesheet' type='text/css'>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+    <link type="text/css" rel="stylesheet" media="all" href="css/jquery.fancybox.css"/>
     <link type="text/css" rel="stylesheet" media="all" href="css/reset.css"/>
     <link type="text/css" rel="stylesheet" media="all" href="css/style.css"/>
     <link type="text/css" rel="stylesheet" media="all" href="css/but.css"/>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.selectbox-0.1.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery.jscrollpane.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/jquery.fancybox.js"></script>
     <script type="text/javascript" src="js/tiny.js"></script>
 </head>
 <body>
@@ -35,7 +39,8 @@
         </div>
     </div>
 </div>
-<div id="content" class="oplata">
+<div class="empty"></div>
+<div id="content" class="oplata box">
     <div class="block"><h1>Информация</h1>
 
         <ul class="pager">
@@ -111,7 +116,8 @@
 
         <div class="form_item fiz">
             <label class="fiz">Физический адрес</label>
-            <input type="checkbox" checked='checked' id="fiz_adres"><label for="fiz_adres" class="checked active">Физический адрес
+            <input type="checkbox" checked='checked' id="fiz_adres"><label for="fiz_adres" class="checked active">Физический
+            адрес
             совпадает с юридическим</label>
 
             <input style="display: none;margin:10px 0 0 245px;" type="text" id="address">
@@ -194,7 +200,7 @@
     </div>
 
     <div class="buttons">
-     <a href="#" class="ybat continue">Продолжить</a>
+        <a href="#" class="ybat continue">Продолжить</a>
         <a href="#" class="white napisat">Назад</a>
     </div>
 
@@ -220,11 +226,12 @@
         </div>
         <div class="lang">
 
-          <div class="first"><img src="images/rus_flag_ico.jpg" alt=""><img class="ar" src="images/arrow_lang.png" alt=""></div>
+            <div class="first"><img src="images/rus_flag_ico.jpg" alt=""><img class="ar" src="images/arrow_lang.png"
+                                                                              alt=""></div>
 
 
             <div class="unvisible">
-               <a href="#"><img src="images/swed_flag_ico.jpg" alt=""><span>Swe</span></a>
+                <a href="#"><img src="images/swed_flag_ico.jpg" alt=""><span>Swe</span></a>
                 <a href="#"><img src="images/usa_flag_ico.jpg" alt=""><span>Eng</span></a>
 
             </div>
@@ -235,5 +242,21 @@
 
 
 </div>
+<script type="text/javascript">
+    $('.selectbox').selectbox();
+    $(function () {
+        $.fancybox($('.oplata.box'), {
+            width:1012,
+            height:1100,
+            autoSize:false,
+            padding:0,
+            margin:20,
+            scrolling:false,
+            minHeight:1100
+        });
+    });
+
+</script>
+
 </body>
 </html>
