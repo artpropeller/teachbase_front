@@ -4055,3 +4055,60 @@ span .sbOptions {
 .oplata .infgray a {
     color: #999;
 }
+
+
+.promo::-webkit-input-placeholder {
+    color: #000;
+}
+
+.promo: -moz-placeholder {
+    color: #000;
+}
+
+.contents.tb {
+    padding: 37px 0 57px;
+}
+
+.contents.tb .ybat.trysmall {
+    font-size: 18px;
+    height: 37px;
+}
+
+.contents.tb .his {
+    margin: -6px auto 0;
+
+}
+
+.contents .padd {
+    padding-top: 5px;
+}
+
+.contents.tb .white.as_guest {
+    font-size: 18px;
+    color: #000;
+}
+
+.contents.tb .tx {
+    width: 410px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 58px;
+    padding-bottom: 18px;
+}
+
+.contents.tb.no_dash {
+    border: 0;
+}
+
+#content.oplata .contents.tb .tx h1 {
+    font-size: 28px;
+    line-height: 32px;
+    margin-bottom: 15px;
+}
+
+.contents.tb .tx p {
+    line-height: 22px;
+    margin-top: -10px;
+    overflow: auto;
+    margin-bottom: 5px;
+}
