@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TeachBase</title>
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic&subset=latin,cyrillic'
+          rel='stylesheet' type='text/css'>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+
+    <link type="text/css" rel="stylesheet" media="all" href="css/reset.css"/>
+    <link type="text/css" rel="stylesheet" media="all" href="css/jquery.jscrollpane.css"/>
+    <link type="text/css" rel="stylesheet" media="all" href="css/style.css"/>
+    <link type="text/css" rel="stylesheet" media="all" href="css/but.css"/>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+    <script type="text/javascript" src="js/jquery.jscrollpane.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/tiny.js"></script>
+</head>
+<body>
+<div id="container">
+<div id="header" class="container">
+    <a class="logo" href="#"><img src="images/tb_logo.png" alt="TeachBase" width="191" height="42"></a>
+
+    <div class="phone">8-800-450-34-54 <span>8 (495) 360-40-90</span><em>Бесплатный по России</em></div>
+    <button class="login">Вход</button>
+</div>
+<div class="clr"></div>
+<div id="fix">
+    <div id="menu">
+        <div class="container">
+            <button class="login">Вход</button>
+            <div class="mlogo"><a href="/"><img src="images/mlogo.png" alt=""></a></div>
+            <ul>
+                <li class="first"><a href="#">О продукте</a></li>
+                <li><a href="#">Клиенты</a></li>
+                <li><a href="#">Тарифы</a></li>
+                <!--<li><a href="#">Поддержка </a></li>-->
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="slide_bg">
+    <div id="slider">
+        <div class="container">
+            <div class="prev" id="slideleft" onclick="slideshow.move(-1)"></div>
+            <div id="sliding">
+                <div class="dark"></div>
+                <div class="dark r"></div>
+                <ul class="slides">
+                    <li>
+                        <h3>Обучение в компании —<br>это просто и интересно. </h3>
+
+                        <p>Сервис TeachBase позволяет вам обучать, оценивать своих сотрудников без каких либо усилий и с
+                            минимальными затратами. Сервис с интуитивным интерфейсом работает через интернет и на
+                            мобильных устройствах.
+                        </p>
+                        <img src="images/slider_img1.png" alt="Создание материалов" width="428" height="316"
+                             class="sl1">
+                    </li>
+                    <li>
+                        <h3>Обучение в компании —<br>это просто и интересно. </h3>
+
+                        <p>Сервис TeachBase позволяет вам обучать, оценивать своих сотрудников без каких либо усилий и с
+                            минимальными затратами. Сервис с интуитивным интерфейсом работает через интернет и на
+                            мобильных устройствах.
+                        </p>
+                        <img src="images/slider_img2.png" alt="Создание материалов" width="375" height="274"
+                             class="sl2">
+                    </li>
+                    <li>
+                        <h3>Обучение в компании —<br>это просто и интересно. </h3>
+
+                        <p>Сервис TeachBase позволяет вам обучать, оценивать своих сотрудников без каких либо усилий и с
+                            минимальными затратами. Сервис с интуитивным интерфейсом работает через интернет и на
+                            мобильных устройствах.
+                        </p>
+                        <img src="images/slider_img3.png" alt="Создание материалов" width="451" height="276">
+                    </li>
+                    <li>
+                        <h3>Обучение в компании —<br>это просто и интересно. </h3>
+
+                        <p>Сервис TeachBase позволяет вам обучать, оценивать своих сотрудников без каких либо усилий и с
+                            минимальными затратами. Сервис с интуитивным интерфейсом работает через интернет и на
+                            мобильных устройствах.
+                        </p>
+                        <img src="images/video_feont.png" alt="Создание материалов" width="356" height="258">
+                    </li>
+                </ul>
+            </div>
+            <div class="next" id="slideright" onclick="slideshow.move(1)"></div>
+            <ul class="nav" id="pagination">
+                <li onclick="slideshow.pos(0)" class="active"></li>
+                <li onclick="slideshow.pos(1)"></li>
+                <li onclick="slideshow.pos(2)"></li>
+                <li onclick="slideshow.pos(3)"></li>
+            </ul>
+        </div>
+        <script type="text/javascript">
+            var slideshow = new TINY.slider.slide('slideshow', {
+                id:'sliding',
+                auto:4,
+                resume:false,
+                vertical:false,
+                navid:'pagination',
+                activeclass:'active',
+                position:0,
+                rewind:false,
+                elastic:false,
+                left:'slideleft',
+                right:'slideright'
+            });
+        </script>
+        <div class="clr"></div>
+    </div>
+    <div id="lineslider"></div>
+    <div id="free">
+        <div class="container">
+            <div class="text"> Вы можете использовать сервис<br>TeachBase в течении <strong>30 дней бесплатно</strong>
+            </div>
+            <a class="ybat trynow" href="#">Попробовать сейчас!</a>
+        </div>
+    </div>
+</div>
+<div id="content">
+    <div class="container">
+        <div class="bolee">
+            <span><img src="images/bolee.jpg" alt="Более 1500"></span>
+
+            <p>компаний доверяют организацию<br>
+                обучения своих сотрудников Teachbase</p>
+        </div>
+        <ul class="clients">
+            <li><span></span><img src="images/client_3.jpg" alt="" width="99" height="57"><span></span></li>
+            <li><img src="images/client_5.jpg" alt="" width="99" height="57"><span></span></li>
+            <li><img src="images/logos_1.jpg" alt="" width="98" height="57"><span></span></li>
+            <li><img src="images/client_7.jpg" alt="" width="99" height="57"><span></span></li>
+            <li><img src="images/logos_2.jpg" alt="" width="101" height="57"><span></span></li>
+            <li><img src="images/logos_3.jpg" alt="" width="101" height="57"><span></span></li>
+            <li><img src="images/client_2.jpg" alt="" width="99" height="57"><span></span></li>
+            <li><img src="images/client_4.jpg" alt="" width="99" height="57"><span></span></li>
+        </ul>
+        <div class="left">
+            <div class="video">
+                <div class="item">
+                    <div class="img">
+                        <a href="#"><img src="images/video_1.jpg" alt=""></a>
+                    </div>
+                    <p>Директор Газпрома</p>
+                </div>
+
+                <div class="item">
+                    <div class="img">
+                        <a href="#"><img src="images/video_2.jpg" alt=""></a>
+                    </div>
+                    <p>Лучшая учебная система</p>
+                </div>
+
+            </div>
+            <div class="respondes">
+                <ul class="voice">
+                    <li class="active">
+                        <blockquote>Сотрудники действительно увлечены обучением, а нам радостно, что их квалификация
+                            стремительно растет.
+                        </blockquote>
+
+                        <q><strong>Александр Захаров,</strong><br>
+                            Директор по развитию, РусГидро</q>
+                    </li>
+                    <li>
+                        <blockquote>Сотрудники обучением, а нам радостно, что их квалификация
+                            стремительно растет.
+                        </blockquote>
+
+                        <q><strong>Михаил Захаров,</strong><br>
+                            Директор по развитию, РусГидро</q>
+                    </li>
+                    <li>
+                        <blockquote>Сотрудники действительно увлечены обучением, что их квалификация
+                            стремительно растет.
+                        </blockquote>
+
+                        <q><strong>Александр Захаров,</strong><br>
+                            Директор по развитию, РусГидро</q>
+                    </li>
+                    <li>
+                        <blockquote>Сотрудники а нам радостно, что их квалификация
+                            стремительно растет.
+                        </blockquote>
+
+                        <q><strong>Михаил Захаров,</strong><br>
+                            Директор по развитию, РусГидро</q>
+                    </li>
+                </ul>
+                <ul class="nav">
+                    <li class="active"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+        <div class="right">
+            <div id="blog">
+                <div class="top">
+                    <div class="bot">
+                        <a class="gray_mini all_blogs" href="#">все записи</a>
+
+                        <h2>Наш блог</h2>
+                        <ul>
+                            <li>
+                                <a class="name" href="#">Как было показано выше, контраст.</a>
+
+                                <p>Восприятие латентно. Социализация понимает тест, что отмечают такие крупнейшие
+                                    ученые как Фрейд, Адлер.</p>
+
+                                <div class="date">12 января 2012</div>
+                            </li>
+                            <li>
+                                <a class="name" href="#">Как было показано выше, контраст.</a>
+
+                                <p>Восприятие латентно. Социализация понимает тест, что отмечают такие крупнейшие
+                                    ученые как Фрейд, Адлер.</p>
+
+                                <div class="date">12 января 2012</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clr"></div>
+        <a class="ybat try30" href="#">Попробовать сейчас! 30 дней бесплатно</a>
+
+        <div class="textcenter">Система работает на iphone и на ipad.</div>
+
+    </div>
+    <div class="dash seo">
+        <div class="container">
+            <div class="seo_text">
+                <div class="tuman_top"></div>
+                <div class="tuman_bottom"></div>
+                <div class="scroll">
+                    <div class="inner">
+
+                        <div class="block50">
+
+
+                            <h4>Еще преимущества Teachbase</h4>
+
+                            <p>Основное качество нашей системы управления организацией — простота в использовании.
+                                В Мегаплане легко может разобраться как бухгалтер предпенсионного возраста, который
+                                и к компьютеру относится с недоверием, так и директор, у которого на освоение
+                                информационных
+                                систем управления есть всего 15 минут. Так что мы с полной уверенностью можем сказать,
+                                что
+                                Мегаплан — это система управления организацией.</p>
+
+                        </div>
+                        <div class="block50 last">
+
+
+                            <h4>Как TeachBase помогает наладить работу в компании?</h4>
+
+                            <p>Многих проблем удалось бы избежать и многие задачи решить легче, если бы изначально было
+                                понятно,
+                                кто отвечает за ту или иную задачу, кому можно задать по ней вопрос. Ведь, согласитесь,
+                                очень
+                                часто сотрудники просто забывают о своих поручениях или не понимают, кто отвечает
+                                за ту или
+                                иную
+                                задачу. И это не их вина действительно, очень сложно правильно выполнить задание.
+                            </p>
+
+                        </div>
+
+                        <div class="block50">
+
+
+                            <h4>Еще преимущества Teachbase</h4>
+
+                            <p>Основное качество нашей системы управления организацией — простота в использовании.
+                                В Мегаплане легко может разобраться как бухгалтер предпенсионного возраста, который
+                                и к компьютеру относится с недоверием, так и директор, у которого на освоение
+                                информационных
+                                систем управления есть всего 15 минут. Так что мы с полной уверенностью можем сказать,
+                                что
+                                Мегаплан — это система управления организацией.</p>
+
+                        </div>
+                        <div class="block50 last">
+
+
+                            <h4>Как TeachBase помогает наладить работу в компании?</h4>
+
+                            <p>Многих проблем удалось бы избежать и многие задачи решить легче, если бы изначально было
+                                понятно,
+                                кто отвечает за ту или иную задачу, кому можно задать по ней вопрос. Ведь, согласитесь,
+                                очень
+                                часто сотрудники просто забывают о своих поручениях или не понимают, кто отвечает
+                                за ту или
+                                иную
+                                задачу. И это не их вина действительно, очень сложно правильно выполнить задание.
+                            </p>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<div id="footer">
+    <div class="container">
+        <ul>
+            <li><a href="#">О компании</a></li>
+            <li><a href="#">Партнеры</a></li>
+            <li><a href="#">Условия пользования</a></li>
+            <li><a href="#">СМИ о нас</a></li>
+            <li><a href="#">Блог</a></li>
+        </ul>
+        <div class="copy">
+            &copy; TeachBase.ru, 2012
+        </div>
+        <div class="social">
+            <a href="#" class="soc fb"></a>
+            <a href="#" class="soc tw"></a>
+            <a href="#" class="soc vk"></a>
+            <a href="#" class="soc gog"></a>
+        </div>
+        <div class="lang">
+
+            <div class="first"><img src="images/rus_flag_ico.jpg" alt=""><img class="ar" src="images/arrow_lang.png"
+                                                                              alt=""></div>
+
+
+            <div class="unvisible">
+                <a href="#"><img src="images/swed_flag_ico.jpg" alt=""><span>Swe</span></a>
+                <a href="#"><img src="images/usa_flag_ico.jpg" alt=""><span>Eng</span></a>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+</div>
+</body>
+</html>

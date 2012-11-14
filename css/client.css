@@ -1,0 +1,133 @@
+#head{
+    background: none;
+}
+
+#head .sod{
+    width: 100%;
+    height: 340px;
+
+    
+}
+
+#content .container.client{
+    width: 940px;
+}
+
+#head .sod .container.client .tekst{
+    background: url("../images/opacity_white.png");
+    padding: 0;
+    overflow: auto;
+    margin-top: 25px;
+
+}
+
+.client_head{
+    background: #fff;
+    padding: 10px 30px 5px;
+}
+
+
+
+#head .sod .container.client .all_clients{
+    width: auto;
+    float: right;
+    color: #000;
+}
+
+#head .sod .container.client .tekst p{
+    padding: 20px 30px 15px;
+}
+
+
+
+#head .sod .container.client .tekst strong, #head .sod .container.client .tekst em{
+    padding: 0 30px;
+    display: block;
+}
+
+#head .sod .container.client .tekst em{
+    margin-bottom: 45px;
+}
+
+#head.client .sod .container.client .but_middle{
+    padding-top: 243px;
+    
+}
+
+#head.client .sod .container.client .but_middle a{
+    padding-top: 14px;
+    height: 35px;
+}
+
+#head .sod.acer{
+    background: #75787d url("../images/head_acer.jpg") no-repeat center;
+
+}
+
+#head .sod.acer .client_head{
+    padding-left: 20px;
+
+}
+
+#head .sod.rusgidro{
+    background: #014f99 url("../images/head_rusgidro.jpg") no-repeat center;
+
+}
+
+#head .sod.dep{
+    background: #4e758f url("../images/head_dep.jpg") no-repeat center;
+
+}
+
+#head .sod.dep .client_head{
+    padding-left: 20px;
+
+}
+
+#head .sod.sog{
+     background: #d9e1ee url("../images/head_sogaz.jpg") no-repeat center;
+
+}
+
+#head .sod.sog .client_head{
+    padding-left: 20px;
+
+}
+
+#head .sod.inv{
+     background: #e0eceb url("../images/head_invitro.jpg") no-repeat center;
+
+}
+
+#head .sod.inv .client_head{
+    padding-left: 20px;
+
+}
+
+#head .sod.ost{
+    background: #d5dfee url("../images/head_ostankino.jpg") no-repeat center;
+
+
+}
+#head .sod.ost .client_head{
+    padding-left: 20px;
+
+}
+
+#head .sod.ast{
+    background: #d1d9dc url("../images/head_ast.jpg") no-repeat center;
+
+}
+#head .sod.ast .client_head{
+    padding-left: 20px;
+
+}
+
+#head .sod.soc{
+    background: #d1d0d8 url("../images/head_soc.jpg") no-repeat center;
+
+}
+#head .sod.soc .client_head{
+    padding-left: 20px;
+
+}

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TeachBase</title>
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic&subset=latin,cyrillic'
+          rel='stylesheet' type='text/css'>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+
+    <link type="text/css" rel="stylesheet" media="all" href="css/reset.css"/>
+    <link type="text/css" rel="stylesheet" media="all" href="css/style.css"/>
+    <link type="text/css" rel="stylesheet" media="all" href="css/but.css"/>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/tiny.js"></script>
+</head>
+<body>
+<div id="container">
+    <div id="header" class="container">
+        <a class="logo" href="#"><img src="images/logo.png" alt="TeachBase" width="178" height="32"></a>
+
+        <div class="phone">8-800-450-34-54 <span>8 (495) 360-40-90</span><em>Бесплатный по России</em></div>
+        <button class="login">Вход</button>
+    </div>
+    <div class="clr"></div>
+    <div id="fix">
+        <div id="menu">
+            <div class="container">
+                <button class="login">Вход</button>
+                <ul>
+                    <li class="first"><a href="#">Тарифы</a></li>
+                    <li class="active"><a href="#">О продукте</a></li>
+                    <li><a href="#">Клиенты</a></li>
+                    <li><a href="#">Поддержка </a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="dash">
+        <div id="blue_line">
+            <div class="container">
+                <div class="top_menu ">
+                    <ul>
+                        <li class="first"><a href="#">Что такое TeachBase</a></li>
+                        <li class="active"><a href="#">Функциональные возможности </a></li>
+                        <li><a href="#">Безопасноть</a></li>
+                    </ul>
+
+                        <a href="#" class="ybat trysmall">Попробовать сейчас!</a>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div id="content">
+        <div class="container">
+            <div class="content-slider">
+                <a class="white comeback" href="#">Вернуться назад</a>
+
+                <h1>Видеоконференции</h1>
+
+                <div id="c-slider">
+                    <div class="prev" id="slideleft" onclick="slideshow.move(-1)"></div>
+                    <div id="sliding">
+                        <ul>
+                            <li>
+                                <div class="img"><img src="images/b-slide-img.jpg" alt=""></div>
+                                <p>
+                                    У вас будет возможность демонстрировать любые материалы, обсуждать их, обмениваться
+                                    мнениями, работать с ними в интерактивном режиме. Это удобно как для проведения
+                                    тренингов, где вы рассказываете презентацию так и для просто совместной работы ваших
+                                    сотрудников.
+                                </p>
+                            </li>
+                            <li>
+                                <div class="img"><img src="images/b-slide-img.jpg" alt=""></div>
+                                <p>
+                                    У вас будет возможность демонстрировать любые материалы, обсуждать их, обмениваться
+                                    мнениями, работать с ними в интерактивном режиме. Это удобно как для проведения
+                                    тренингов, где вы рассказываете презентацию так и для просто совместной работы ваших
+                                    сотрудников.
+                                </p>
+                            </li>
+                            <li>
+                                <div class="img"><img src="images/b-slide-img.jpg" alt=""></div>
+                                <p>
+                                    У вас будет возможность демонстрировать любые материалы, обсуждать их, обмениваться
+                                    мнениями, работать с ними в интерактивном режиме. Это удобно как для проведения
+                                    тренингов, где вы рассказываете презентацию так и для просто совместной работы ваших
+                                    сотрудников.
+                                </p>
+                            </li>
+                            <li>
+                                <div class="img"><img src="images/b-slide-img.jpg" alt=""></div>
+                                <p>
+                                    У вас будет возможность демонстрировать любые материалы, обсуждать их, обмениваться
+                                    мнениями, работать с ними в интерактивном режиме. Это удобно как для проведения
+                                    тренингов, где вы рассказываете презентацию так и для просто совместной работы ваших
+                                    сотрудников.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="next" id="slideright" onclick="slideshow.move(1)"></div>
+
+                </div>
+                <ul id="c-slider-nav">
+                    <li onclick="slideshow.pos(0)"></li>
+                    <li onclick="slideshow.pos(2)"></li>
+                    <li onclick="slideshow.pos(2)"></li>
+                    <li onclick="slideshow.pos(3)"></li>
+                </ul>
+            </div>
+            <script type="text/javascript">
+                var slideshow = new TINY.slider.slide('slideshow', {
+                    id:'sliding',
+                    auto:4,
+                    resume:false,
+                    vertical:false,
+                    navid:'c-slider-nav',
+                    activeclass:'active',
+                    position:0,
+                    rewind:false,
+                    elastic:false,
+                    left:'slideleft',
+                    right:'slideright'
+                });
+            </script>
+
+
+            <div class="clr"></div>
+            <a class="ybat try30" href="#">Попробовать сейчас! 30 дней бесплатно</a>
+
+            <div class="textcenter">Система работает на iphone и на ipad.</div>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="container">
+            <ul>
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Партнеры</a></li>
+                <li><a href="#">Условия пользования</a></li>
+                <li><a href="#">СМИ о нас</a></li>
+                <li><a href="#">Блог</a></li>
+            </ul>
+            <div class="copy">
+                &copy; TeachBase.ru, 2012
+            </div>
+            <div class="social">
+                <a href="#" class="soc fb"></a>
+                <a href="#" class="soc tw"></a>
+                <a href="#" class="soc vk"></a>
+                <a href="#" class="soc gog"></a>
+            </div>
+            <div class="lang">
+
+              <div class="first"><img src="images/rus_flag_ico.jpg" alt=""><img class="ar" src="images/arrow_lang.png" alt=""></div>
+
+
+                <div class="unvisible">
+                   <a href="#"><img src="images/swed_flag_ico.jpg" alt=""><span>Swe</span></a>
+                    <a href="#"><img src="images/usa_flag_ico.jpg" alt=""><span>Eng</span></a>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+</div>
+</body>
+</html>

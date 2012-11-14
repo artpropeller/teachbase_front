@@ -1,0 +1,550 @@
+.ybat {
+    font-family: "PT Sans", sans-serif;
+    font-weight: bold;
+    display: block;
+    font-size: 18px;
+    height: 35px;
+    background-image: url("../images/but_sprite1.png");
+    background-repeat: no-repeat;
+    padding-top: 15px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.try30 {
+    background-position: left top;
+    width: 382px;
+    margin: 0 auto;
+}
+
+.try30:hover {
+    background-position: -397px top;
+
+}
+
+.try30:active {
+    background-position: -795px top;
+
+}
+
+.trynow {
+    font-size: 22px;
+    background-position: left -66px;
+    width: 292px;
+    padding-top: 13px;
+    height: 38px;
+}
+
+.trynow:hover {
+    background-position: -397px -66px;
+}
+
+.trynow:active {
+    background-position: -795px -66px;
+}
+
+.continue {
+    background-position: left -132px;
+    width: 212px;
+    height: 32px;
+    padding-top: 10px;
+
+}
+
+.continue:hover {
+    background-position: -397px -132px;
+
+}
+
+.continue:active {
+    background-position: -795px -132px;
+
+}
+
+.trysmall {
+    background-position: left -191px;
+    font-size: 15px;
+    width: 212px;
+    height: 30px;
+    padding-top: 12px;
+
+}
+
+.trysmall:hover {
+    background-position: -397px -132px;
+}
+
+.trysmall:active {
+    background-position: -795px -132px;
+}
+
+#tab table td .buy{
+    font-size: 18px;
+
+}
+
+.buy {
+    background-position: left -250px;
+    font-size: 16px;
+    width: 100px;
+    height: 30px;
+    padding-top: 10px;
+
+}
+
+.buy:hover {
+    background-position: -397px -250px;
+
+}
+
+.buy:active {
+    background-position: -795px -250px;
+
+}
+
+.gray_mini {
+    font-size: 12px;
+    color: #5b5b5b;
+    display: block;
+    font-family: "PT Sans", sans-serif;
+    width: 87px;
+
+    text-align: center;
+    padding-top: 4px;
+    height: 18px;
+    background-image: url("../images/sprite_gray_mini.png");
+    background-repeat: no-repeat;
+    text-decoration: none;
+}
+
+.yet {
+    background-position: left top;
+}
+
+.yet:hover {
+    background-position: -150px top;
+
+}
+
+.all_blogs {
+    background-position: left -40px;
+
+}
+
+.all_blogs:hover {
+    background-position: -150px -40px;
+
+}
+
+.white{
+    background-image: url("../images/white_but_sprite.png");
+    background-repeat: no-repeat;
+    color: #000;
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    text-decoration: none;
+
+}
+
+.send_mes {
+    background-position: left top;
+    height: 34px;
+    width: 202px;
+    padding-top: 13px;
+
+}
+
+.send_mes:hover {
+    background-position: -292px top;
+
+}
+
+.send_mes:active {
+    background-position: -583px top;
+
+}
+
+.help {
+    background-position: left -181px;
+    width: 168px;
+    height: 34px;
+    padding-top: 13px;
+}
+
+.help:hover {
+    background-position: -292px -181px;
+
+}
+
+.help:active {
+    background-position: -583px -181px;
+
+}
+
+.as_guest {
+    background-position: left -273px;
+    width: 245px;
+    height: 32px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.as_guest:hover {
+    background-position: -292px -273px;
+
+}
+
+.as_guest:active {
+    background-position: -583px -273px;
+
+}
+
+.napisat {
+    background-position: left -330px;
+    width: 178px;
+    height: 32px;
+    font-weight: bold;
+    padding-top: 10px;
+
+}
+
+.napisat:hover {
+    background-position: -292px -330px;
+
+}
+
+.napisat:active {
+    background-position: -583px -330px;
+
+}
+
+.comeback {
+    background-position: left -477px;
+    width: 148px;
+    height: 26px;
+    padding-top: 8px;
+    font-size: 14px;
+
+}
+
+.comeback:hover {
+    background-position: -292px -477px;
+}
+
+.comeback:active {
+    background-position: -583px -477px;
+}
+
+.read_more {
+    background-position: left -526px;
+    width: 138px;
+    height: 25px;
+    padding-top: 5px;
+    font-size: 15px;
+
+}
+
+.read_more:hover {
+    background-position: -292px -526px;
+}
+
+.read_more:active {
+    background-position: -583px -526px;
+}
+
+.prov {
+    background-position: left -572px;
+    padding-top: 10px;
+    font-size: 14px;
+    width: 90px;
+    height: 27px;
+
+}
+
+.prov:hover {
+    background-position: -292px -572px;
+}
+
+.prov:active {
+    background-position: -583px -572px;
+}
+
+.blue_but, button.login {
+    background-image: url("../images/sprite_blue_but.png");
+    background-repeat: no-repeat;
+    font-size: 23px;
+    color: #ffffff;
+    text-shadow: 1px 1px 1px #004c91;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+}
+
+.reg {
+    background-position: left top;
+    height: 41px;
+    width: 282px;
+    padding-top: 15px;
+
+}
+
+.reg:hover {
+    background-position: -295px top;
+}
+
+.reg:active {
+    background-position: -591px top;
+}
+
+.enter {
+    background-position: left -62px;
+    height: 32px;
+    width: 105px;
+    padding-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+
+}
+
+.enter:hover {
+    background-position: -295px -62px;
+}
+
+.enter:active {
+    background-position: -591px -62px;
+}
+
+.write {
+    background-position: left -137px;
+    height: 25px;
+    width: 105px;
+    padding-top: 8px;
+    font-size: 14px;
+
+}
+
+.write:hover {
+    background-position: -295px -137px;
+}
+
+.write:active {
+    background-position: -591px -137px;
+}
+
+.voiti, button.login {
+    background-position: left -178px;
+    height: 32px;
+    width: 83px;
+    padding-top: 1px;
+    font-size: 14px;
+
+}
+
+.voiti:hover, button.login:hover {
+    background-position: -295px -178px;
+}
+
+.voiti:active, button.login:active {
+    background-position: -591px -178px;
+}
+
+.soc {
+    width: 33px;
+    height: 33px;
+    display: block;
+    background-image: url("../images/sprite_social.png");
+    background-repeat: no-repeat;
+    float: left;
+    margin-right: 10px;
+}
+
+.fb {
+    background-position: left top;
+}
+
+.fb:hover {
+    background-position: -215px top;
+}
+
+.tw {
+    background-position: -43px top;
+
+}
+
+.tw:hover {
+    background-position: -258px top;
+
+}
+
+.vk {
+    background-position: -85px top;
+
+}
+
+.vk:hover {
+    background-position: -300px top;
+
+}
+
+.gog {
+    background-position: -127px top;
+
+}
+
+.gog:hover {
+    background-position: -342px top;
+
+}
+
+#free .ybat.trynow {
+    float: right;
+    margin-top: 20px;
+}
+
+#blog .bot .gray_mini.all_blogs {
+    float: right;
+    padding-top: 1px;
+    height: 25px;
+    display: block;
+}
+
+.social {
+    margin-left: 30px;
+}
+
+#footer .lang {
+    left: 665px;
+    top: 64px;
+}
+
+#footer .lang span {
+    font-size: 13px;
+}
+
+.top_menu .ybat.trysmall {
+    float: right;
+}
+
+.container.about .try30 {
+    margin: 0 0 15px 0;
+}
+
+.log.left .enter {
+    float: left;
+    margin-top: 25px;
+}
+
+#right .white.as_guest {
+    float: left;
+    margin-top: 5px;
+}
+
+#blue_line .ybat.trynow {
+    float: right;
+}
+
+.log .blue_but.write {
+    margin: 0 auto 10px;
+}
+
+.form .blue_but.reg{
+    margin: 0 35px;
+}
+
+.container.suport .white.help{
+    float: left;
+    margin-right: 10px;
+    margin-top: -3px;
+    padding-top: 12px;
+}
+
+#tab table td .buy{
+    margin: 10px auto 0;
+}
+
+#tab table td .buy.oth{
+    padding-top: 2px;
+    height: 38px;
+}
+
+.buttons .continue{
+    float: right;
+}
+
+
+.contents .ybat.trysmall{
+    color: #000;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+.container.client .trynow{
+    margin: 0 auto;
+
+}
+
+.left ul li .gray_mini.yet{
+    position: absolute;
+    left:101px;
+    bottom: 15px;
+    padding-top: 1px;
+    height: 22px;
+}
+
+#blue_line .ybat.trynow.oth{
+    float: left;
+    padding-top: 9px;
+    height: 42px;
+    margin-top: 20px;
+}
+
+.container.client .ybat.trynow.oth{
+    margin-top: 262px;
+    padding-top: 14px;
+}
+
+.container.txt .ybat.try30{
+    margin-top: 20px;
+}
+
+.container.vac.go .white.send_mes{
+    float: right;
+}
+
+
+.container.vac.go .left .white.send_mes{
+    float: left;
+    margin-top: 5px;
+}
+
+.but .ybat.try30{
+    float: left;
+    padding-top: 13px;
+    height: 37px;
+
+}
+
+.content-slider .white.comeback{
+    float: right;
+    padding-top: 6px;
+    height: 28px;
+    margin-top: 10px;
+}
+
+.ybat.try30.oth{
+    margin-top: 20px;
+}
+.ybat.trynow.sec{
+    margin-top: 50px;
+    padding-top: 10px;
+    height: 39px;
+}
+
+.but_bottom .ybat.trynow{
+    margin: 0 auto;
+}
+
+
+
