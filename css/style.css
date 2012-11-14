@@ -2888,7 +2888,7 @@ a.come_back:hover {
 }
 
 .form_oplata .bank_name {
-    /*overflow: hidden;*/
+    overflow: hidden;
 }
 
 .form_oplata select {
@@ -4002,7 +4002,7 @@ span .sbOptions {
     position: absolute;
     width: 115px;
     height: 18px;
-    right: 232px;
+    right: 225px;
     top: 10px;
 }
 
@@ -4054,30 +4054,4 @@ span .sbOptions {
 
 .oplata .infgray a {
     color: #999;
-}
-
-.b-hover {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: 9000;
-}
-
-.sbOptions {
-    z-index: 10000;
-}
-
-.oplata.box h1.fl {
-    float: left;
-}
-
-.oplata.box .logos {
-    float: left;
-    position: relative;
-    top: -9px;
-    margin-left: 18px;
-}
-
-.form_oplata .code .er_mes {
-    right: 270px;
 }

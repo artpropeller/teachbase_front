@@ -1,2 +1,6 @@
 syntax: glob
+<<<<<<< HEAD
 .idea*
+=======
+.idea*
+>>>>>>> origin/master
