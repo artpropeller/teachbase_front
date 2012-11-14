@@ -2888,7 +2888,7 @@ a.come_back:hover {
 }
 
 .form_oplata .bank_name {
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 
 .form_oplata select {
@@ -4122,4 +4122,8 @@ span .sbOptions {
 
 .sbOptions {
     z-index: 9000;
+}
+
+.form_oplata .code .er_mes {
+    right: 270px;
 }
