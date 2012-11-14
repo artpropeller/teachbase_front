@@ -154,10 +154,32 @@ $(function () {
         return f;
     });
 
-    $('#request').click(function(){
+    $('#request').click(function () {
         $('#tab').find('.pop_up').fadeIn(500);
         return false
 
+    });
+
+    var card = false;
+    $('#card').keyup(function (e) {
+        var i = $(this);
+        var types = {
+            'mastercard':'.mastercard',
+            'maestro':'.maestro',
+            'visa':'.visa'
+        };
+        var v = i.val();
+        console.log(v.length);
+        if (v.length > 3 && !card) {
+//                получаем тип карты
+            card = 'visa';
+            $(types[card]).addClass('active');
+            $('.form_oplata .cards div:not(.active)').hide(0);
+        }
+        if (v.length < 4) {
+            card = false;
+            $('.form_oplata .cards div').removeClass('active').show(0);
+        }
     });
 
 });

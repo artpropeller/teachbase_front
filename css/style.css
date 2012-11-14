@@ -2805,6 +2805,7 @@ a.come_back:hover {
     margin-top: 27px;
     padding-left: 150px;
     position: relative;
+    margin-bottom: 40px;
 
 }
 
@@ -2864,7 +2865,7 @@ a.come_back:hover {
 }
 
 .form_oplata .card_number input {
-    width: 63px;
+    /*width: 63px;*/
     margin-right: 10px;
 
 }
@@ -3921,22 +3922,136 @@ span .sbOptions {
     height: 47px;
 }
 
+.oplata.box {
+    display: none;
+}
 
+.empty {
+    height: 1000px;
+}
 
+#content.oplata.box {
+    margin: 0;
+}
 
+.fancybox-skin {
+    background: none;
 
+}
 
+.fancybox-opened .fancybox-skin {
+     -webkit-box-shadow: none;
+     -moz-box-shadow: none;
+     box-shadow: none;
+ }
 
+#content.oplata.box {
+    -webkit-box-shadow: 0 2px 3px #999;
+    -moz-box-shadow: 0 2px 3px #999;
+    box-shadow: 0 1px 2px #333;
+    color: #000;
+}
 
+#content.oplata h1 {
+    color: #000;
+    margin-bottom: 26px;
+}
 
+#content.oplata.box .block {
+    margin-bottom: 18px;
+}
 
+#content.oplata.box .block.link {
+    padding: 0 35px 18px;
+}
 
+#content.oplata.box .pager {
+    position: relative;
+    margin-top:-5px;
+}
 
+.block.link .sum span {
+    font-weight: bold;
+}
 
+.block.link .sum, .block.link .num {
+    color: #000;
+    float: left;
+    font-size: 18px;
+    padding-right: 40px;
+}
 
+.block.link .information {
+    position: relative;
+    float: right;
+    width: 320px;
+    font-size: 12px;
+    color: #4b4b4b;
+    line-height: 16px;
+    text-align: left;
+    margin-top: -6px;
+    margin-bottom: -4px;
 
+}
 
+.block.link .information a {
+    color: #4b4b4b;
+}
 
+.form_oplata .cards {
+    position: absolute;
+    width: 115px;
+    height: 18px;
+    right: 225px;
+    top: 10px;
+}
 
+.form_oplata .cards div {
+    float: right;
+    height: 18px;
+    margin-left: 5px;
+}
 
+.form_oplata .cards .visa {
+    background: url("../images/cart_sprite.png") no-repeat top left;
+    width: 40px;
+}
 
+.form_oplata .cards .visa.active {
+    background: url("../images/cart_sprite.png") no-repeat bottom left;
+}
+
+.form_oplata .cards .maestro {
+    width: 30px;
+     background: url("../images/cart_sprite.png") no-repeat -45px top;
+ }
+
+.form_oplata .cards .maestro.active {
+    background: url("../images/cart_sprite.png") no-repeat -45px bottom;
+}
+
+.form_oplata .cards .mastercard {
+    width: 30px;
+    background: url("../images/cart_sprite.png") no-repeat -82px top;
+}
+
+.form_oplata .cards .mastercard.active {
+    background: url("../images/cart_sprite.png") no-repeat -82px bottom;
+}
+
+.oplata .inf {
+    line-height: 24px;
+}
+
+.oplata .infgray {
+    line-height: 16px;
+    display: block;
+    font-size: 14px;
+    color: #999;
+    margin-top: 15px;
+
+}
+
+.oplata .infgray a {
+    color: #999;
+}

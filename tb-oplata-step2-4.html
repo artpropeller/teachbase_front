@@ -5,12 +5,15 @@
     <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic&subset=latin,cyrillic'
           rel='stylesheet' type='text/css'>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+    <link type="text/css" rel="stylesheet" media="all" href="css/jquery.fancybox.css"/>
     <link type="text/css" rel="stylesheet" media="all" href="css/reset.css"/>
     <link type="text/css" rel="stylesheet" media="all" href="css/style.css"/>
     <link type="text/css" rel="stylesheet" media="all" href="css/but.css"/>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script type="text/javascript" src="js/jquery.selectbox-0.1.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery.jscrollpane.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/jquery.fancybox.js"></script>
     <script type="text/javascript" src="js/tiny.js"></script>
 </head>
 <body>
@@ -36,7 +39,10 @@
         </div>
     </div>
 </div>
-<div id="content" class="oplata">
+<div class="empty"></div>
+
+
+<div id="content" class="oplata box">
     <div class="block"><h1>Оплата</h1>
 
         <ul class="pager">
@@ -47,48 +53,31 @@
         </ul>
     </div>
     <div class="block link">
-        <ul>
-            <li class="active"><a href="#">Пластиковая карта</a></li>
-            <li><a href="#">Безналичным переводом</a></li>
-        </ul>
-
+        <div class="sum">Сумма: <strong><span>3450</span> рублей</strong></div>
+        <div class="num">Номер заказа: <strong>00064649352</strong></div>
+        <div class="information">
+            Информацию об этот платеж в Вашей банковской выписке вы  
+            можете найти по идентификатору <a href="#">www.teachbase.ru</a>
+        </div>
+        <div class="clr"></div>
     </div>
 
     <div class="card">
-
-        <span>Сервис TeachBase позволяет вашей компании моментально организовать процесс<br/> обучения в компании.  У каждого сотрудника будет свой личный кабинет. </span>
-
-        <div class="check">
-            <div class="item first">
-                <label for="chk1"><img src="images/card1.png" width="88" height="42" alt=""></label>
-                <input type="radio" name="pay" id="chk1">
-            </div>
-
-            <div class="item">
-                <label class="active" for="chk2"><img src="images/card2.png" width="69" height="42" alt=""></label>
-                <input type="radio" name="pay" id="chk2">
-            </div>
-
-            <div class="item">
-                <label for="chk3"><img src="images/card3.png" width="69" height="42" alt=""></label>
-                <input type="radio" name="pay" id="chk3">
-            </div>
-        </div>
-
 
         <div class="form_oplata">
             <div class="card_number">
                 <label for="card">Номер карты</label>
                 <input type="text" id="card">
-                <input type="text">
-                <input type="text">
-                <input type="text">
-                 <div class="er_mes">Не заполнено поле</div>
+                <div class="cards">
+                    <div class="mastercard"></div>
+                    <div class="maestro"></div>
+                    <div class="visa"></div>
+                </div>
                 <div class="clr"></div>
             </div>
 
             <div class="srok">
-                <label for="dat">Срок действия карты</label>
+                <label for="month">Срок действия карты</label>
                 <span><select name="" id="month" class="selectbox">
                     <option value="">01</option>
                     <option value="">02</option>
@@ -125,9 +114,8 @@
 
             <div class="dergatel">
                 <label for="dergat">Держатель карты <em>(латинскими буквами)</em></label>
-                <input type="text" id="dergat" class="error">
+                <input type="text" id="dergat">
 
-                <div class="er_mes">Не заполнено поле</div>
                 <div class="clr"></div>
             </div>
 
@@ -161,12 +149,19 @@
             </div>
         </div>
 
+
+        <span class="inf">Указанная  Вами  персональная  информация  и  данные  пластиковой  карты<br>  используется исключительно в системе PayOnline для проведения платежа</span>
+
+        <span class="infgray">В  случае  возникновения  вопросов  при  оплате,  Вы  можете  обратиться  в  службу пользовательской<br> поддержки по телефону 8‐800‐7000‐729 или на E-mail: <a
+                href="mailto:support@payonline.ru">support@payonline.ru</a>.</span>
+
         <div class="secure">
             <img src="images/secure1.jpg" width="60" height="44" alt="">
             <img src="images/secure2.jpg" width="60" height="44" alt="">
             <img src="images/secure3.jpg" width="72" height="44" alt="">
             <img src="images/secure4.jpg" width="64" height="44" alt="">
             <img src="images/secure5.jpg" width="67" height="44" alt="">
+            <img src="images/payonline.png" width="60" height="44" alt="">
         </div>
 
 
@@ -180,6 +175,8 @@
 
 
 </div>
+
+
 <div id="footer">
     <div class="container">
         <ul>
@@ -217,6 +214,18 @@
 </div>
 <script type="text/javascript">
     $('.selectbox').selectbox();
+    $(function(){
+        $.fancybox($('.oplata.box'),{
+            width:1012,
+            height:790,
+            autoSize:false,
+            padding:0,
+            margin:20,
+            scrolling:false,
+            minHeight:790
+        });
+    });
+
 </script>
 </body>
 </html>
