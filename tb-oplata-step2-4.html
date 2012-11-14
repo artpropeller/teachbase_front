@@ -12,6 +12,7 @@
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script type="text/javascript" src="js/jquery.selectbox-0.1.3.min.js"></script>
     <script type="text/javascript" src="js/jquery.jscrollpane.js"></script>
+    <script type="text/javascript" src="js/jquery.maskedinput-1.3.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript" src="js/jquery.fancybox.js"></script>
     <script type="text/javascript" src="js/tiny.js"></script>
@@ -43,7 +44,7 @@
 
 
 <div id="content" class="oplata box">
-    <div class="block"><h1>Оплата</h1>
+    <div class="block"><h1 class="fl">Оплата</h1><img class="logos" src="images/logo_new.png" alt="">
 
         <ul class="pager">
             <li><a href="#">1</a></li>
@@ -68,6 +69,7 @@
             <div class="card_number">
                 <label for="card">Номер карты</label>
                 <input type="text" id="card">
+
                 <div class="cards">
                     <div class="mastercard"></div>
                     <div class="maestro"></div>
@@ -103,6 +105,14 @@
                     <option value="">2015</option>
                     <option value="">2016</option>
                     <option value="">2017</option>
+                    <option value="">2018</option>
+                    <option value="">2019</option>
+                    <option value="">2020</option>
+                    <option value="">2021</option>
+                    <option value="">2022</option>
+                    <option value="">2023</option>
+                    <option value="">2024</option>
+                    <option value="">2025</option>
 
                 </select>
 
@@ -114,7 +124,7 @@
 
             <div class="dergatel">
                 <label for="dergat">Держатель карты <em>(латинскими буквами)</em></label>
-                <input type="text" id="dergat">
+                <input  type="text" id="dergat">
 
                 <div class="clr"></div>
             </div>
@@ -125,17 +135,17 @@
                 <a href="#"> <img src="images/spravka_ico.png" width="17" height="16" alt=""></a>
 
 
-
                 <div class="popup">
                     <a href="#" class="clozed"></a>
 
                     <p>
                         <strong>Код CVV2/CVC2</strong>
-                        Сервис TeachBase позволяет вашей компании моментально организовать процесс обучения в компании. У
+                        Сервис TeachBase позволяет вашей компании моментально организовать процесс обучения в компании.
+                        У
                         каждого сотрудника будет свой личный кабинет. </p>
                 </div>
 
-                  <div class="clr"></div>
+                <div class="clr"></div>
             </div>
 
             <div class="bank_name">
@@ -144,7 +154,8 @@
 
                 <input type="text" id="bank">
 
-                  <div class="clr"></div>
+
+                <div class="clr"></div>
 
             </div>
         </div>
@@ -169,7 +180,7 @@
 
 
     <div class="buttons">
-       <a href="#" class="ybat continue">Оплатить</a>
+        <a href="#" class="ybat continue">Оплатить</a>
         <a href="#" class="white napisat">Назад</a>
     </div>
 
@@ -197,11 +208,12 @@
         </div>
         <div class="lang">
 
-          <div class="first"><img src="images/rus_flag_ico.jpg" alt=""><img class="ar" src="images/arrow_lang.png" alt=""></div>
+            <div class="first"><img src="images/rus_flag_ico.jpg" alt=""><img class="ar" src="images/arrow_lang.png"
+                                                                              alt=""></div>
 
 
             <div class="unvisible">
-               <a href="#"><img src="images/swed_flag_ico.jpg" alt=""><span>Swe</span></a>
+                <a href="#"><img src="images/swed_flag_ico.jpg" alt=""><span>Swe</span></a>
                 <a href="#"><img src="images/usa_flag_ico.jpg" alt=""><span>Eng</span></a>
 
             </div>
@@ -211,11 +223,24 @@
 </div>
 
 
-</div>
 <script type="text/javascript">
-    $('.selectbox').selectbox();
-    $(function(){
-        $.fancybox($('.oplata.box'),{
+    $('.selectbox').selectbox({
+        onOpen:function (inst) {
+            $('.oplata').prepend('<div class="b-hover"></div>');
+        },
+        onClose:function (inst) {
+            $('.b-hover').remove();
+        }
+    });
+
+    $("#card").mask("9999 9999 9999 9999", {placeholder:" "});
+    $("#dergat").keyup(function (e) {
+        $(this).val($(this).val().replace(/[а-яА-Я0-9]/g, ""))
+    });
+    $("#cod").mask("999", {placeholder:" "});
+
+    $(function () {
+        $.fancybox($('.oplata.box'), {
             width:1012,
             height:790,
             autoSize:false,

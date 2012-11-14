@@ -157,8 +157,12 @@ $(function () {
     $('#request').click(function () {
         $('#tab').find('.pop_up').fadeIn(500);
         return false
-
     });
+
+    $('.b-hover').live('click', function () {
+        $("#month, #year").selectbox('close');
+    });
+
 
     var card = false;
     $('#card').keyup(function (e) {
@@ -169,21 +173,43 @@ $(function () {
             'visa':'.visa'
         };
         var v = i.val();
-        console.log(v.length);
-        if (v.length > 3 && !card) {
+        if (v.trim().length > 3 && !card) {
 //                получаем тип карты
-            card = 'visa';
+            card = get_cart();
             $(types[card]).addClass('active');
             $('.form_oplata .cards div:not(.active)').hide(0);
         }
-        if (v.length < 4) {
+        if (v.trim().length < 4) {
             card = false;
             $('.form_oplata .cards div').removeClass('active').show(0);
         }
     });
+    $('#card').focus(function () {
+        document.getElementById('card').setSelectionRange(0, 0);
+    });
+    $('.ybat.continue').click(function () {
+        $('#card,#dergat,#cod,#bank').each(function () {
+            if (!$(this).val().trim() || !$(this).val()) {
+                $(this).addClass('error');
+                $(this).after('<div class="er_mes">Не заполнено поле</div>');
+            }
+            else {
+                $(this).removeClass('error');
+                $(this).parent().find('.er_mes').remove();
+            }
+        });
+    });
 
 });
 
+function get_cart(){
+    var types = {
+        1:'visa',
+        2:'mastercard',
+        3:'maestro'
+    };
+    return types[parseInt($('#card').val().trim()[0])];
+}
 
 
 
