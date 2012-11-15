@@ -16,6 +16,10 @@
     <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript" src="js/jquery.fancybox.js"></script>
     <script type="text/javascript" src="js/tiny.js"></script>
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="js/PIE.js"></script>
+    <link type="text/css" rel="stylesheet" media="all" href="css/styleIE.css"/>
+    <![endif]-->
 </head>
 <body>
 <div id="container">
@@ -124,7 +128,7 @@
 
             <div class="dergatel">
                 <label for="dergat">Держатель карты <em>(латинскими буквами)</em></label>
-                <input  type="text" id="dergat">
+                <input type="text" id="dergat">
 
                 <div class="clr"></div>
             </div>
@@ -247,7 +251,14 @@
             padding:0,
             margin:20,
             scrolling:false,
-            minHeight:790
+            minHeight:790,
+            afterShow:function () {
+                if (window.PIE) {
+                    $('.oplata').each(function () {
+                        PIE.attach(this);
+                    });
+                }
+            }
         });
     });
 

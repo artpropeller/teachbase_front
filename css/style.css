@@ -2156,7 +2156,7 @@ ol li span {
     margin: 30px auto;
     overflow: visible;
     box-shadow: 0 1px 2px #dddddd;
-    behavior: url("/PIE.htc");
+    behavior: url("/css/PIE.htc");
     position: relative;
     zoom:1;
     z-index: 0;
@@ -2335,7 +2335,7 @@ ol li span {
 }
 
 .form .form_item input[type=checkbox] {
-    visibility: hidden;
+    opacity: 0;
     width: 0;
     height: 0;
     position: absolute;
@@ -2611,7 +2611,7 @@ a.come_back:hover {
     background: #fff;
     box-shadow: inset 1px 1px 2px #e0e0e0;
     padding: 20px 20px 15px;
-    overflow: auto;
+    overflow: visible;
     border-radius: 4px;
     -webkit-border-radius: 4px;
     color: #222222;
@@ -2623,6 +2623,7 @@ a.come_back:hover {
     display: block;
     width: auto;
     font-size: 20px;
+    color: #000;
 
 }
 
@@ -2676,6 +2677,8 @@ a.come_back:hover {
     float: right;
     padding: 0;
     margin: 0;
+    overflow: visible;
+    width: 285px;
 
 }
 
@@ -2690,7 +2693,7 @@ a.come_back:hover {
     padding: 0 5px;
     color: #4c4c4c;
     font-size: 13px;
-    line-height: 24px;
+    line-height: 1;
     padding-top: 1px;
     height: 34px;
     font-family: 'PT Sans', sans-serif;
@@ -4139,3 +4142,38 @@ span .sbOptions {
     top:-9px;
     margin-left: 15px;
 }
+
+.contents td{
+    vertical-align: top;
+    padding: 15px 0 15px;
+}
+
+.serv{
+    width: 620px;
+    margin: 0 auto 5px;
+    font-size: 17px;
+    color: #000;
+    line-height: 20px;
+
+
+}
+
+#http::-webkit-input-placeholder{
+    color: #000;
+}
+
+#http:-moz-placeholder{
+    color: #000;
+}
+
+
+.form .form_item  input{
+    text-align: left;
+}
+
+.tarif a{
+    text-decoration: none !important;
+}
+
+
+
