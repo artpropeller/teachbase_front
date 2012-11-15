@@ -13,6 +13,9 @@
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script type="text/javascript" src="js/jquery.selectbox-0.1.3.min.js"></script>
     <script type="text/javascript" src="js/jquery.jscrollpane.js"></script>
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="js/PIE.js"></script>
+    <![endif]-->
     <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript" src="js/jquery.fancybox.js"></script>
     <script type="text/javascript" src="js/tiny.js"></script>
@@ -105,7 +108,13 @@
             padding:0,
             margin:20,
             scrolling:false,
-            minHeight:450
+            minHeight:450,
+            afterShow: function(){
+                if (window.PIE) {
+                    $('.oplata').each(function() {
+                        PIE.attach(this);
+                    });
+                }}
         });
     });
 
