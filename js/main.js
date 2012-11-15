@@ -174,9 +174,11 @@ $(function () {
             'visa':'.visa'
         };
         var v = i.val();
-        if (v.trim().length > 3 && !card) {
+        if (v.trim().length > 3) {
 //                получаем тип карты
+
             card = get_cart();
+            $('.form_oplata .cards div').removeClass('active').show(0);
             $(types[card]).addClass('active');
             $('.form_oplata .cards div:not(.active)').hide(0);
         }
@@ -197,6 +199,10 @@ $(function () {
             else {
                 $(this).removeClass('error');
                 $(this).parent().find('.er_mes').remove();
+            }
+            if ($(this).is('#card') && $(this).val().trim().length < 19) {
+                $(this).addClass('error');
+                $(this).after('<div class="er_mes big">Кол-во знаков введено некорректно</div>');
             }
         });
     });
@@ -236,6 +242,7 @@ function get_cart(){
         2:'mastercard',
         3:'maestro'
     };
+    console.log($('#card').val().trim()[0]);
     return types[parseInt($('#card').val().trim()[0])];
 }
 
