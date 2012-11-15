@@ -239,7 +239,7 @@
 
     $("#card").mask("9999 9999 9999 9999", {placeholder:" "});
     $("#dergat").keyup(function (e) {
-        $(this).val($(this).val().replace(/[а-яА-Я0-9]/g, ""))
+        $(this).val($(this).val().replace(/[а-яА-Я0-9\.,;:_!@#?<>№$%^&*()-+='`~"\\\/]/g, ""))
     });
     $("#cod").mask("999", {placeholder:" "});
 

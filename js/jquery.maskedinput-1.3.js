@@ -47,7 +47,9 @@
 				return { begin: begin, end: end };
 			}
 		},
-		unmask: function() { return this.trigger("unmask"); },
+		unmask: function() {
+            return this.trigger("unmask");
+        },
 		mask: function(mask, settings) {
 			if (!mask && this.length > 0) {
 				var input = $(this[0]);
@@ -229,21 +231,21 @@
 							.removeData($.mask.dataName);
 					})
 					.bind("focus.mask", function() {
-						focusText = input.val();
-						var pos = checkVal();
-						writeBuffer();
-						var moveCaret=function(){
-							if (pos == mask.length)
-								input.caret(0, pos);
-							else
-								input.caret(pos);
-						};
-						($.browser.msie ? moveCaret:function(){setTimeout(moveCaret,0)})();
+//						focusText = input.val();
+//						var pos = checkVal();
+//						writeBuffer();
+//						var moveCaret=function(){
+//							if (pos == mask.length)
+//								input.caret(0, pos);
+//							else
+//								input.caret(pos);
+//						};
+//						($.browser.msie ? moveCaret:function(){setTimeout(moveCaret,0)})();
 					})
 					.bind("blur.mask", function() {
-						checkVal();
-						if (input.val() != focusText)
-							input.change();
+//						checkVal();
+//						if (input.val() != focusText)
+//							input.change(1);
 					})
 					.bind("keydown.mask", keydownEvent)
 					.bind("keypress.mask", keypressEvent)
