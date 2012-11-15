@@ -2156,6 +2156,10 @@ ol li span {
     margin: 30px auto;
     overflow: visible;
     box-shadow: 0 1px 2px #dddddd;
+    behavior: url(PIE.htc);
+    position: relative;
+    zoom:1;
+    z-index: 0;
 
 }
 
@@ -4104,11 +4108,12 @@ span .sbOptions {
     font-size: 28px;
     line-height: 32px;
     margin-bottom: 15px;
+    float: none;
 }
 
 .contents.tb .tx p {
     line-height: 22px;
-    margin-top: -10px;
+    margin-top: -5px;
     overflow: auto;
     margin-bottom: 5px;
 }
