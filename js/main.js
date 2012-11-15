@@ -187,8 +187,13 @@ $(function () {
             $('.form_oplata .cards div').removeClass('active').show(0);
         }
     });
-    $('#card').focus(function () {
-        document.getElementById('card').setSelectionRange(0, 0);
+    $('#card').click(function () {
+        $(this).blur();
+        setCaretPosition('card',$(this).val().trim().length);
+    });
+    $('#cod').click(function () {
+        $(this).blur();
+        setCaretPosition('cod',$(this).val().trim().length);
     });
     $('.ybat.continue').click(function () {
         $('#card,#dergat,#cod,#bank').each(function () {
@@ -201,6 +206,10 @@ $(function () {
                 $(this).parent().find('.er_mes').remove();
             }
             if ($(this).is('#card') && $(this).val().trim().length < 19) {
+                $(this).addClass('error');
+                $(this).after('<div class="er_mes big">Кол-во знаков введено некорректно</div>');
+            }
+            if ($(this).is('#cod') && $(this).val().trim().length < 3) {
                 $(this).addClass('error');
                 $(this).after('<div class="er_mes big">Кол-во знаков введено некорректно</div>');
             }
@@ -244,6 +253,40 @@ function get_cart(){
     };
     console.log($('#card').val().trim()[0]);
     return types[parseInt($('#card').val().trim()[0])];
+}
+
+
+function setCaretPosition(elemId, caretPos) {
+    var el = document.getElementById(elemId);
+    console.log(caretPos);
+    el.value = el.value;
+    // ^ this is used to not only get "focus", but
+    // to make sure we don't have it everything -selected-
+    // (it causes an issue in chrome, and having it doesn't hurt any other browser)
+
+    if (el !== null) {
+
+        if (el.createTextRange) {
+            var range = el.createTextRange();
+            range.move('character', caretPos);
+            range.select();
+            return true;
+        }
+
+        else {
+            // (el.selectionStart === 0 added for Firefox bug)
+            if (el.selectionStart || el.selectionStart === 0) {
+                el.focus();
+                el.setSelectionRange(caretPos, caretPos);
+                return true;
+            }
+
+            else  { // fail city, fortunately this never happens (as far as I've tested) :)
+                el.focus();
+                return false;
+            }
+        }
+    }
 }
 
 
