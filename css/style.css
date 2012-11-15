@@ -2156,7 +2156,7 @@ ol li span {
     margin: 30px auto;
     overflow: visible;
     box-shadow: 0 1px 2px #dddddd;
-    behavior: url(PIE.htc);
+    behavior: url("../PIE.htc");
     position: relative;
     zoom:1;
     z-index: 0;
@@ -4093,7 +4093,7 @@ span .sbOptions {
 }
 
 .contents.tb .tx {
-    width: 410px;
+    width: 425px;
     margin: 0 auto;
     text-align: center;
     padding-top: 58px;
