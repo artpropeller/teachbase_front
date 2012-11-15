@@ -189,11 +189,11 @@ $(function () {
     });
     $('#card').click(function () {
         $(this).blur();
-        setCaretPosition('card',$(this).val().trim().length);
+        setCaretPosition('card', $(this).val().trim().length);
     });
     $('#cod').click(function () {
         $(this).blur();
-        setCaretPosition('cod',$(this).val().trim().length);
+        setCaretPosition('cod', $(this).val().trim().length);
     });
     $('.ybat.continue').click(function () {
         $('#card,#dergat,#cod,#bank').each(function () {
@@ -205,39 +205,53 @@ $(function () {
                 $(this).removeClass('error');
                 $(this).parent().find('.er_mes').remove();
             }
-            if ($(this).is('#card') && $(this).val().trim().length < 19) {
-                $(this).addClass('error');
-                $(this).after('<div class="er_mes big">Кол-во знаков введено некорректно</div>');
+            if ($(this).is('#card')) {
+                if ($(this).val().trim().length < 19 && $(this).val().trim().length > 0)
+                {
+                    $(this).addClass('error');
+                    $(this).after('<div class="er_mes big">Кол-во знаков введено некорректно</div>');
+                }
+                else {
+                    $(this).parent().find('.er_mes.big').remove();
+                }
             }
-            if ($(this).is('#cod') && $(this).val().trim().length < 3) {
-                $(this).addClass('error');
-                $(this).after('<div class="er_mes big">Кол-во знаков введено некорректно</div>');
+            if ($(this).is('#cod')) {
+                if ($(this).val().trim().length < 3 && $(this).val().trim().length > 0)
+                {
+                    $(this).addClass('error');
+                    $(this).after('<div class="er_mes big">Кол-во знаков введено некорректно</div>');
+                }
+                else {
+                    $(this).parent().find('.er_mes.big').remove();
+                }
             }
+
+
         });
     });
-     /* Placeholder for IE */
-    if($.browser.msie) { // Условие для вызова только в IE
-        $(".form").find("input[type='text']").each(function() {
+    /* Placeholder for IE */
+    if ($.browser.msie) { // Условие для вызова только в IE
+        $(".form").find("input[type='text']").each(function () {
             var tp = $(this).attr("placeholder");
-            $(this).attr('value',tp).css('color','#000');
-        }).focusin(function() {
-            var val = $(this).attr('placeholder');
-            if($(this).val() == val) {
-                $(this).attr('value','').css('color','#000');
-            }
-        }).focusout(function() {
-            var val = $(this).attr('placeholder');
-            if($(this).val() == "") {
-                $(this).attr('value', val).css('color','#000');
-            }
-        });
+            $(this).attr('value', tp).css('color', '#000');
+        }).focusin(function () {
+                var val = $(this).attr('placeholder');
+                if ($(this).val() == val) {
+                    $(this).attr('value', '').css('color', '#000');
+                }
+            }).focusout(function () {
+                var val = $(this).attr('placeholder');
+                if ($(this).val() == "") {
+                    $(this).attr('value', val).css('color', '#000');
+                }
+            });
 
         /* Protected send form */
-        $("form").submit(function() {
-            $(this).find("input[type='text']").each(function() {
+        $("form").submit(function () {
+            $(this).find("input[type='text']").each(function () {
                 var val = $(this).attr('placeholder');
-                if($(this).val() == val) {
-                    $(this).attr('value','');
+                if ($(this).val() == val) {
+                    $(this).attr('value', '');
                 }
             })
         });
@@ -245,20 +259,18 @@ $(function () {
 
 });
 
-function get_cart(){
+function get_cart() {
     var types = {
         1:'visa',
         2:'mastercard',
         3:'maestro'
     };
-    console.log($('#card').val().trim()[0]);
     return types[parseInt($('#card').val().trim()[0])];
 }
 
 
 function setCaretPosition(elemId, caretPos) {
     var el = document.getElementById(elemId);
-    console.log(caretPos);
     el.value = el.value;
     // ^ this is used to not only get "focus", but
     // to make sure we don't have it everything -selected-
@@ -281,7 +293,7 @@ function setCaretPosition(elemId, caretPos) {
                 return true;
             }
 
-            else  { // fail city, fortunately this never happens (as far as I've tested) :)
+            else { // fail city, fortunately this never happens (as far as I've tested) :)
                 el.focus();
                 return false;
             }
