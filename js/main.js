@@ -102,7 +102,7 @@ $(function () {
     });
 
     $('a.change').click(function () {
-        $('#changetarif').show(0);
+        $('#changetarif').fadeIn(300);
         return false;
     });
 
@@ -111,7 +111,7 @@ $(function () {
         $('.tarif strong').text($(this).find('td:eq(1)').text());
         $('.volume').text($(this).find('em').text());
         $('.dashed em').html($(this).find('.small').html());
-        $('#changetarif').hide(0);
+        $('#changetarif').fadeOut(300);
         return false;
     });
 

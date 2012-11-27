@@ -2464,7 +2464,7 @@ a.come_back:hover {
 .tarif .dashed {
     border: 1px dashed #d3d3d3;
     overflow: auto;
-    height: 64px;
+    height: 63px;
     border-left: 0;
     border-left: none;
 
@@ -2473,7 +2473,7 @@ a.come_back:hover {
 .tarif span {
     display: block;
     font-size: 18px;
-    padding-bottom: 10px;
+    padding-bottom: 9px;
 }
 
 .plan {
@@ -2486,8 +2486,9 @@ a.come_back:hover {
     font-size: 18px;
     float: left;
     text-align: center;
-    padding: 25px 0 0;
+    padding: 24px 0 0;
     width: 168px;
+    padding-left: 1px;
 
 }
 
@@ -2496,7 +2497,7 @@ a.come_back:hover {
     display: block;
     width: auto;
     float: left;
-    padding: 23px 25px 0;
+    padding: 23px 27px 0;
 }
 
 .tarif .volume {
@@ -2511,16 +2512,17 @@ a.come_back:hover {
     float: left;
     margin-top: 15px;
     padding-top: 9px;
-    margin-right: 25px;
+    margin-right: 32px;
 }
 
 .tarif em {
     font-style: normal;
     font-size: 11px;
+    line-height: 12px;
     color: #323232;
     float: left;
     width: auto;
-    padding-top: 13px;
+    padding-top: 20px;
     display: block;
 }
 
@@ -3265,7 +3267,7 @@ span .sbOptions {
 }
 
 .nastroiki table .do {
-    width: 225px;
+    width: 223px;
 }
 
 .nastroiki table .small {
@@ -3285,9 +3287,10 @@ span .sbOptions {
     width: 61px;
     height: 26px;
     font-weight: bold;
-    padding-top: 8px;
+    padding-top: 16px;
     text-shadow: 1px 1px 2px #7c7c7c;
     font-style: normal;
+    font-size: 18px;
 
 }
 
