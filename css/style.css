@@ -2495,9 +2495,10 @@ a.come_back:hover {
 .tarif strong {
     font-size: 18px;
     display: block;
-    width: auto;
+    width: 223px;
     float: left;
-    padding: 23px 27px 0;
+    padding-top: 23px;
+    text-align: center;
 }
 
 .tarif .volume {
