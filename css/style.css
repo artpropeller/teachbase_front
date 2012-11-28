@@ -2158,7 +2158,7 @@ ol li span {
     box-shadow: 0 1px 2px #dddddd;
     behavior: url("/css/PIE.htc");
     position: relative;
-    zoom:1;
+    zoom: 1;
     z-index: 0;
 
 }
@@ -2705,21 +2705,31 @@ a.come_back:hover {
 .period .cont .txt .form button {
     display: block;
     text-align: center;
-    width: 86px;
     height: 37px;
     text-align: center;
-    background: url("../images/proverit.png") no-repeat top;
-    border: 0;
-    border: none;
-    padding-top: 0px;
+    background: none;
+    background-image: url("../images/white_but_sprite.png");
+    background-repeat: no-repeat;
+    color: #000;
+    display: block;
+    text-align: center;
+    padding-top: 0;
     cursor: pointer;
     padding-bottom: 4px;
+    background-position: left -572px;
+    font-size: 12px;
+    width: 90px;
+    border: 0;
 
 }
 
 .period .cont .txt .form button:hover {
-    background: url("../images/proverit.png") no-repeat bottom;
+    background-position: -292px -572px;
 
+}
+
+.period .cont .txt .form button:active {
+    background-position: -583px -572px;
 }
 
 .period .cont .txt .form span {
@@ -3748,7 +3758,7 @@ span .sbOptions {
     margin-left: -240px;
     box-shadow: 0 0 15px #999;
     padding: 30px 38px 0;
-    top:-10px;
+    top: -10px;
     display: none;
 
 }
@@ -3791,7 +3801,7 @@ span .sbOptions {
 
 }
 
-.pop_up input[type=submit]{
+.pop_up input[type=submit] {
     background: url("../images/otpravit_sprite.png") no-repeat left;
     height: 40px;
     color: #000;
@@ -3804,102 +3814,96 @@ span .sbOptions {
     cursor: pointer;
 }
 
-.pop_up input[type=submit]:hover{
+.pop_up input[type=submit]:hover {
     background: url("../images/otpravit_sprite.png") no-repeat -128px;
-
 
 }
 
-
-.pop_up input[type=submit]:active{
+.pop_up input[type=submit]:active {
     background: url("../images/otpravit_sprite.png") no-repeat -256px;
 
 }
 
-.pop_up textarea:focus, .pop_up input[type=text]:focus{
+.pop_up textarea:focus, .pop_up input[type=text]:focus {
     background: #f0fbf0;
 }
 
-.pop_up input.err{
+.pop_up input.err {
     background: #fbc3be;
     box-shadow: inset 1px 1px 5px #eab6b1, 0 1px 1px #fff;
     color: #000;
 }
 
-
-.pop_up input.err:focus{
+.pop_up input.err:focus {
     box-shadow: inset 1px 1px 5px #dedede, 0 1px 1px #fff;
 
 }
 
-.pop_up .item{
+.pop_up .item {
     position: relative;
 }
 
-
-
-.pop_up .box{
+.pop_up .box {
     position: absolute;
     height: 52px;
-    left:0;
-    top:-7px;
+    left: 0;
+    top: -7px;
     color: #fff;
     font-size: 16px;
     margin-left: 410px;
     white-space: nowrap;
 
-
 }
-.pop_up .box .left_part{
+
+.pop_up .box .left_part {
     background: url("../images/arrow_box_left.png") no-repeat left;
     width: 24px;
     height: 52px;
     position: absolute;
-    lef:0;
+    lef: 0;
 
 }
 
-.pop_up .box .right_part{
+.pop_up .box .right_part {
     background: url("../images/arrow_box_right.png") no-repeat right;
     width: 20px;
     height: 52px;
-    right:0;
+    right: 0;
     position: absolute;
-    top:0;
+    top: 0;
 }
-.pop_up .box .center_part{
+
+.pop_up .box .center_part {
     background: url("../images/arrow_box_bg.png") repeat-x;
     padding: 0 8px;
     height: 37px;
     padding-top: 15px;
     margin: 0 20px 0 24px;
 
-
 }
 
-.pop_up .close{
+.pop_up .close {
     background: url("../images/dialog_close.png") no-repeat;
     position: absolute;
-    width:22px;
+    width: 22px;
     height: 22px;
-    top:15px;
+    top: 15px;
     right: 13px;
     cursor: pointer;
 
 }
 
-
-#tab table th.bl{
+#tab table th.bl {
     background: url("../images/th_blue_bg.jpg") repeat-x;
     width: 150px;
 }
 
-#tab table th .pad1{
+#tab table th .pad1 {
     padding-top: 20px;
     display: block;
 }
 
-#tab table .pad{
+#tab table .pad {
     width: 120px;
     font-weight: bold;
     font-size: 12px;
@@ -3907,28 +3911,27 @@ span .sbOptions {
     margin-top: 30px;
 }
 
-.tex{
+.tex {
     width: 480px;
-    float:left;
+    float: left;
     font-size: 16px;
     color: #000;
 }
 
-#blue_line .container.midl .ybat.try30{
+#blue_line .container.midl .ybat.try30 {
     float: left;
-    margin:0;
+    margin: 0;
     margin-left: 57px;
     margin-top: 20px;
     padding-top: 13px;
     height: 37px;
 }
 
-
-#blue_line .container.midl{
+#blue_line .container.midl {
     padding-left: 40px;
 }
 
-.pop_up .box .center_part.oth{
+.pop_up .box .center_part.oth {
     padding-top: 5px;
     height: 47px;
 }
@@ -3951,10 +3954,10 @@ span .sbOptions {
 }
 
 .fancybox-opened .fancybox-skin {
-     -webkit-box-shadow: none;
-     -moz-box-shadow: none;
-     box-shadow: none;
- }
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
 
 #content.oplata.box {
     -webkit-box-shadow: 0 2px 3px #999;
@@ -3978,7 +3981,7 @@ span .sbOptions {
 
 #content.oplata.box .pager {
     position: relative;
-    margin-top:-5px;
+    margin-top: -5px;
 }
 
 .block.link .sum span {
@@ -4034,8 +4037,8 @@ span .sbOptions {
 
 .form_oplata .cards .maestro {
     width: 30px;
-     background: url("../images/cart_sprite.png") no-repeat -45px top;
- }
+    background: url("../images/cart_sprite.png") no-repeat -45px top;
+}
 
 .form_oplata .cards .maestro.active {
     background: url("../images/cart_sprite.png") no-repeat -45px bottom;
@@ -4066,7 +4069,6 @@ span .sbOptions {
 .oplata .infgray a {
     color: #999;
 }
-
 
 .promo::-webkit-input-placeholder {
     color: #000;
@@ -4143,39 +4145,37 @@ span .sbOptions {
 .logos {
     float: left;
     position: relative;
-    top:-9px;
+    top: -9px;
     margin-left: 15px;
 }
 
-.contents td{
+.contents td {
     vertical-align: top;
     padding: 15px 0 15px;
 }
 
-.serv{
+.serv {
     width: 620px;
     margin: 0 auto 5px;
     font-size: 17px;
     color: #000;
     line-height: 20px;
 
-
 }
 
-#http::-webkit-input-placeholder{
+#http::-webkit-input-placeholder {
     color: #000;
 }
 
-#http:-moz-placeholder{
+#http:-moz-placeholder {
     color: #000;
 }
 
-
-.form .form_item  input{
+.form .form_item  input {
     text-align: left;
 }
 
-.tarif a{
+.tarif a {
     text-decoration: none !important;
 }
 
