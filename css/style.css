@@ -4180,4 +4180,105 @@ span .sbOptions {
 }
 
 
+.slides li.last .img{
+    width: 374px;
+    height: 192px;
+    position: relative;
+    margin-top: -20px;
+    float: left;
+}
+
+.play_mov{
+    text-decoration: none;
+}
+
+.play_mov span{
+    background: url("../images/ico_player.png") no-repeat top;
+    height: 99px;
+    display: block;
+    width: 95px;
+    position: absolute;
+    left:50%;
+    top: 60%;
+    margin-left: -47px;
+}
+
+
+.play_mov:hover span{
+    background: url("../images/ico_player.png") no-repeat bottom;
+}
+
+.play_mov .podpis{
+    background: url("../images/video_podpis_bg.png");
+    height: 27px;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    width: 237px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    text-align: center;
+    padding-top: 3px;
+    position: absolute;
+    top:115%;
+    left:50%;
+    margin-left: -118px;
+
+}
+
+#slider ul.slides li.last{
+    padding-top: 0;
+}
+
+#slider ul.slides li.last .inf{
+    margin-left: 418px;
+    padding-top: 50px;
+}
+#slider ul.slides li.last .inf h3{
+    font-size: 32px;
+    font-weight: bold;
+    color: #fff;
+}
+
+#slider ul.slides li.last .inf p{
+    font-size: 18px;
+    color: #91a3b1;
+    padding-bottom: 30px;
+}
+
+.big_inf_but{
+    display: block;
+    background: url("../images/big_button_sprite.png") no-repeat top;
+    width: 331px;
+    height: 55px;
+    color: #000;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 10px;
+    text-shadow: 1px 1px 1px #ffeeaa;
+}
+.big_inf_but span{
+    display: block;
+    color: #443a12;
+    font-size: 17px;
+    text-align: center;
+    font-weight: bold;
+}
+.big_inf_but:hover{
+    background: url("../images/big_button_sprite.png") no-repeat 0 -67px;
+
+}
+
+.big_inf_but:active{
+    background: url("../images/big_button_sprite.png") no-repeat 0 -135px;
+
+}
+
+
+
+
+
+
 
