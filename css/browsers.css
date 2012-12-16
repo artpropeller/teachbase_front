@@ -1,0 +1,408 @@
+body {
+    background: url("../images/bg.png");
+    font-family: 'PT Sans', sans-serif;
+    font-size: 17px;
+    color: #000;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: underline;
+
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+#logo {
+    border-bottom: 1px solid #d9d9d9;
+    text-align: center;
+    padding: 42px 0 35px;
+
+}
+
+#login {
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #d9d9d9;
+    text-align: center;
+    padding-top: 23px;
+    overflow: auto;
+
+}
+
+#login .form {
+    width: 386px;
+    margin: 0 auto;
+}
+
+#login .form .form_item {
+    position: relative;
+    padding-top: 0;
+}
+
+.er_mes.big {
+    display: block;
+    background: url("../images/error_box.png") no-repeat left;
+    color: #fff;
+    text-align: center;
+    padding: 6px 15px;
+    font-size: 16px;
+    position: absolute;
+    right: -210px;
+    top: -4px;
+    height: 39px;
+    width: 168px;
+}
+
+#login .form input {
+    width: 358px;
+    border: 1px solid #bfbfbf;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    box-shadow: inset 2px 2px 3px #eeeeee, 0 1px #fff;
+    height: 45px;
+    margin-bottom: 18px;
+    padding: 0 14px;
+    line-height: 35px;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 18px;
+
+}
+
+#login .form input.log{
+    margin-bottom: 12px;
+    margin-top: 0;
+}
+
+#login .form input.pas{
+    margin-bottom: 15px;
+}
+
+#login .form input.mail{
+    margin-bottom: 12px;
+}
+
+#login .form input.ems{
+    margin-bottom: 20px;
+}
+
+input:focus {
+    background: #f0fbf0;
+}
+
+#login .form input.error {
+    background: #fbc3be;
+    box-shadow: inset 2px 2px 2px #e5b4af, 0 1px #fff;
+}
+
+#login .form input[type=checkbox] {
+    width: 0;
+    float: left;
+    position: absolute;
+    left: 9000px;
+}
+
+#login .form label {
+    width: auto;
+    float: left;
+    display: block;
+    color: #000;
+    font-size: 15px;
+    background: url("../images/checkbox_par.png") no-repeat left;
+    padding-left: 25px;
+    cursor: pointer;
+
+}
+
+#login .form label.active {
+    background: url("../images/checkbox_par_active.png") no-repeat left;
+}
+
+#login .form a {
+    color: #616161;
+    padding-left: 45px;
+    display: block;
+    padding-bottom: 2px;
+    font-size: 15px;
+    text-align: right;
+
+}
+
+span {
+    font-size: 20px;
+    color: #333;
+    display: block;
+    font-family: 'PT Sans', sans-serif;
+    margin-bottom: 25px;
+}
+
+span.pad{
+    margin-bottom: 22px;
+}
+
+span.guest {
+    color: #000;
+}
+
+.log {
+    width: 386px;
+    margin: 22px auto -70px;
+
+}
+
+.log.guest {
+    margin: 13px auto 78px;
+}
+
+.log .enter {
+
+    margin: 0 auto;
+    margin-bottom: 34px;
+    position: relative;
+    z-index: 100;
+    font-weight: bold;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.log button.oth{
+    margin-bottom: 30px;
+}
+
+.log.guest button {
+    margin-bottom: 23px;
+
+}
+
+.log button:hover {
+    background: url("../images/log_but.png") no-repeat bottom;
+
+}
+
+#bottom {
+    border-top: 1px solid #fff;
+}
+
+.log .podpis {
+    font-size: 14px;
+    color: #000;
+}
+
+.log .podpis a {
+    color: #1543a4;
+    padding-left: 2px;
+}
+
+#login .form.left {
+    margin: 0;
+    float: left;
+}
+
+.container {
+    width: 940px;
+    margin: 0 auto;
+
+}
+
+.log.left {
+    float: left;
+    margin: 0;
+
+}
+
+.log.left button {
+    margin: 20px 0 27px;
+
+}
+
+.container span {
+    float: left;
+    display: block;
+    font-size: 20px;
+    color: #000;
+}
+
+#left {
+    background: url("../images/log_razdel.jpg") no-repeat right 7px;
+    width: 429px;
+    float: left;
+    padding-left: 97px;
+}
+
+#right {
+    width: 360px;
+    float: left;
+    text-align: left;
+    padding-left: 40px;
+}
+
+#right span {
+    line-height: 23px;
+    margin-bottom: 18px;
+}
+
+#right .guest_but {
+    display: block;
+    float: left;
+    width: 239px;
+    height: 31px;
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 11px;
+    background: url("../images/guest_but.png") no-repeat top;
+
+}
+
+#right .guest_but:hover {
+    background: url("../images/guest_but.png") no-repeat bottom;
+
+}
+
+span.date {
+    color: #000;
+    font-size: 18px;
+    line-height: 22px;
+
+}
+
+.datum {
+    width: 384px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    padding-top: 5px;
+}
+
+.datum .imag {
+    background: url("../images/calendar_ico.png") no-repeat;
+    width: 46px;
+    height: 46px;
+    text-align: center;
+    float: left;
+}
+
+.datum .imag .month {
+    color: #fff;
+    font-size: 10px;
+    padding-top: 2px;
+    padding-bottom: 7px;
+
+}
+
+.datum .imag .dat {
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.datum .who {
+    float: left;
+    padding-left: 24px;
+
+}
+
+.datum .who span {
+    font-size: 18px;
+    margin-bottom: 5px;
+    padding-top: 4px;
+}
+
+.datum .who .when span {
+    font-size: 14px;
+    display: block;
+    float: left;
+    padding-right: 25px;
+    padding-top: 0;
+}
+
+.datum .who .when span em {
+    color: #666666;
+    font-style: normal;
+}
+
+
+#login .center {
+    font-size: 15px;
+    margin-bottom: 24px;
+    line-height: 20px;
+}
+
+.log.restore {
+    margin: 6px auto -68px;
+}
+
+.log.restore button {
+    background: url("../images/log_but2.png") no-repeat top;
+    width: 162px;
+}
+
+.log.restore button:hover {
+    background: url("../images/log_but2.png") no-repeat bottom;
+}
+
+#login .label {
+    font-size: 18px;
+    text-align: left;
+    padding-left:12px;
+    margin: 5px 0 8px;
+}
+
+h1{
+    font-size: 27px;
+    font-weight: bold;
+    margin-bottom: 26px;
+    line-height: 31px;
+
+}
+
+.podpis{
+    margin-bottom: 22px;
+}
+
+.browsers{
+    width: 666px;
+    margin:  0 auto 60px;
+    overflow: auto;
+}
+.browsers a{
+    display: block;
+    float: left;
+    color: #000;
+    font-size: 17px;
+    text-align: center;
+}
+
+.browsers img{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.browsers .ff, .browsers .opera, .browsers .chr{
+    margin-right: 55px;
+}
+
+.lock{
+    background: url("../images/lock_bg.png");
+    padding: 17px 20px;
+    width: 339px;
+    margin: 0 auto 50px;
+    overflow: auto;
+    text-align: left;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+.lock img{
+    float: left;
+    margin-top: 10px;
+
+}
+
+.lock p{
+    margin-left: 45px;
+    font-size: 14px;
+    line-height: 18px;
+}
+
