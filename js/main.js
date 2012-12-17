@@ -301,6 +301,8 @@ function setCaretPosition(elemId, caretPos) {
     }
 }
 
+$('.fancybox').fancybox();
+
 
 
 
