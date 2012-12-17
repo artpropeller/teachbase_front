@@ -1817,7 +1817,7 @@
 
 		beforeShow : function(opts, obj) {
 			if (obj.locked) {
-				this.el.addClass('fancybox-lock');
+//				this.el.addClass('fancybox-lock');
 
 				if (this.margin !== false) {
 					$('body').css('margin-right', getScalar( this.margin ) + obj.scrollbarWidth);

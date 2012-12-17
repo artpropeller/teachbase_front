@@ -5,3 +5,7 @@
 .period .cont .txt .form input{
     line-height: 32px;
 }
+
+#menu .search input{
+    line-height: 26px;
+}

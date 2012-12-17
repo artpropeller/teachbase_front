@@ -231,7 +231,7 @@ $(function () {
     });
     /* Placeholder for IE */
     if ($.browser.msie) { // Условие для вызова только в IE
-        $(".form").find("input[type='text']").each(function () {
+        $(".form, .search").find("input[type='text']").each(function () {
             var tp = $(this).attr("placeholder");
             $(this).attr('value', tp).css('color', '#000');
         }).focusin(function () {
@@ -301,7 +301,17 @@ function setCaretPosition(elemId, caretPos) {
     }
 }
 
-$('.fancybox').fancybox();
+$(".fancybox").fancybox({
+    helpers : {
+        overlay : {
+            css : {
+
+            }
+        }
+    },
+    scrollOutside: false,
+    fitToView: false
+});
 
 
 

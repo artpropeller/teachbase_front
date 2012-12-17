@@ -41,7 +41,7 @@
     background: none;
     border: 0;
     height: 28px;
-    line-height: 26px;
+    line-height: 1;
     display: block;
 
 }
@@ -241,7 +241,7 @@ h2 {
 
 .container.about .right .block .new {
     margin-bottom: 10px;
-    overflow: auto;
+    /*overflow: auto;*/
 
 }
 
@@ -265,6 +265,11 @@ h2 {
     margin-bottom: 12px;
     overflow: auto;
     width: 215px;
+    text-decoration: none;
+}
+
+.container.about .right .block .archive.last{
+    margin-bottom: 0;
 }
 
 .container.about .right .block .amount {
@@ -518,8 +523,15 @@ h3 a {
     padding-bottom: 10px;
 }
 
+.fancybox-lock #menu ul {
+    margin-left: -8px;
+
+}
 
 
+body{
+    margin-right: 0 !important;
+}
 
 
 
