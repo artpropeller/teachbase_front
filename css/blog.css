@@ -293,11 +293,11 @@ h2 {
 
 .container.about .right .block .scroll {
     height: 150px;
-    margin: 10px 0;
+    margin: 20px 0;
 }
 
 .container.about .right .block .scroll .inner{
-    padding-top: 10px !important;
+    padding-top: 0 !important;
     padding-bottom: 0 !important;
 }
 
