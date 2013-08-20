@@ -1,0 +1,211 @@
+.connection-test {
+    background: url("../images/button-check-connect.png") no-repeat left top;
+    width: 289px;
+    height: 32px;
+    color: #332701;
+    font-family: "PT Sans Bold", sans-serif;
+    text-align: center;
+    display: block;
+    padding-top: 8px;
+    font-size: 18px;
+    text-decoration: none;
+
+}
+
+.connection-test:hover {
+    background-position: 0 -40px;
+}
+
+.connection-test:active {
+    background-position: 0 -80px;
+}
+
+#blue_line.support .container {
+    padding: 40px 0 40px 20px;
+}
+
+.support i {
+    position: absolute;
+    display: block;
+}
+
+.instruction {
+    font-size: 18px;
+    display: block;
+    position: relative;
+    padding-left: 45px;
+    padding-top: 5px;
+}
+
+.instruction i {
+    background: url("../images/ico-instruction.png") no-repeat;
+    width: 35px;
+    height: 34px;
+    left: 0;
+    top: 0;
+}
+
+.left h5 {
+    font-family: 'PT Sans Bold', sans-serif;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+#content.support {
+    padding-top: 45px;
+    padding-bottom: 30px;
+}
+
+#content.support .left {
+    width: 290px;
+}
+
+#content.support .right {
+    width: 605px;
+
+}
+
+.support .menu {
+    margin-bottom: 30px;
+}
+
+.support .menu li.last {
+    margin-bottom: 0;
+}
+
+.support .menu li a {
+    font-size: 16px;
+    color: #0064b8;
+    line-height: 18px;
+    letter-spacing: 0;
+    display: block;
+    padding: 5px 0 7px 20px;
+}
+
+.support .menu li.active a {
+    background: #282d34;
+    color: #fff;
+    border-radius: 3px;
+    text-decoration: none;
+}
+#content.support{
+    color: #000;
+}
+
+#content.support h1 {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 30px;
+}
+
+#content.support .hint {
+    text-align: center;
+}
+
+#content.support p{
+    font-size: 16px;
+    margin-bottom: 15px;
+    line-height: 24px;
+}
+
+#content.support .hint p {
+    margin-bottom: 15px;
+    font-size: 16px;
+
+}
+
+#content.support .hint a {
+    display: block;
+    color: #0064b8;
+    font-size: 16px;
+    margin-bottom: 7px;
+}
+
+#content.support .hint strong {
+    font-size: 16px;
+    font-family: "PT Sans Bold", sans-serif;
+}
+
+.tac {
+    text-align: center;
+}
+
+
+.container.support{
+    width: 920px;
+    padding-left: 20px;
+}
+
+#content.support .right ul{
+    padding-left: 15px;
+    margin-bottom: 25px;
+}
+
+
+#content.support .right ul li{
+    font-size: 16px;
+    background: url("../images/marker-black-line.jpg") no-repeat left 11px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    line-height: 22px;
+
+}
+
+#content.support h2{
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #000;
+    font-weight: normal;
+    font-family: "PTSansRegular", sans-serif;
+    line-height: 26px;
+}
+
+
+#content.support blockquote{
+    padding-left: 35px;
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+
+.support .video{
+    display: block;
+    text-align: center;
+    position: relative;
+    margin-bottom: 30px;
+    padding-top: 10px;
+}
+
+.support .video img{
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+.support .video i{
+    background: url("../images/ico-gray-play.png") no-repeat left top;
+    width: 78px;
+    height: 79px;
+    left: 50%;
+    top: 50%;
+    margin-left: -39px;
+    margin-top: -39px;
+}
+
+.support .video:hover i{
+    background-position: left -79px;
+}
+
+
+.screenshot{
+    text-align: center;
+    margin-bottom: 30px;
+    padding-top: 10px;
+}
+
+.screenshot img{
+    border: 1px solid #d2d2d2;
+    display: block;
+    margin: 0 auto;
+}
